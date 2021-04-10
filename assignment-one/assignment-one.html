@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	
+	<form action="">
+		First name: <input type="text" name='fname' autocomplete="off">
+		<br>
+		Last name: <input type="text" name='lname' autocomplete="on">
+		<br>
+		<input type="submit">
+	</form>
+
+  	<!-- <script type="text/javascript" src='https://code.jquery.com/jquery-1.12.1.js'></script> -->
+	<script type="text/javascript">
+		// $(document).ready(function(){
+			
+		// });
+
+		function validationForm(){
+			var x = document.forms['myform']['fname'].value;
+			if(x == || x == null){
+				alert("Name must be filled out");
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
